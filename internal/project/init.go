@@ -100,10 +100,13 @@ func createFiles(p Project) error {
 		return err
 	}
 
-	err = os.WriteFile(filepath.Join(p.workDir, "docker-compose.yml"), []byte("version: 0.0.1"), 0o644)
-	if err != nil {
-		return err
+	if p.docker {
+		err = os.WriteFile(filepath.Join(p.workDir, "docker-compose.yml"), []byte("version: 0.0.1"), 0o644)
+		if err != nil {
+			return err
+		}
 	}
+
 	return nil
 }
 
