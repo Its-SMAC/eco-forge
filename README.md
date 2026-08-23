@@ -1,6 +1,9 @@
 # Forge
 A CLI application that helps developers build APIs faster using community-driven modules.
 
+> [!NOTE]
+> **Development is on hold for now.**
+
 ## Why
 
 The idea behind Forge came from a simple goal: reduce the time it takes to build APIs without sacrificing quality.
